@@ -1,3 +1,13 @@
-.body_text {
-  font-size: 125%;
+h1, .body_text {
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.body_text {    
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #f00;
 }
