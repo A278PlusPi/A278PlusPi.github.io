@@ -1,2 +1,2 @@
 # A278PlusPi.github.io
-My personal website
+My personal website is under construction. There might be some information that may not be factually right, so please let me know if anything presented on my website is incorrect 
