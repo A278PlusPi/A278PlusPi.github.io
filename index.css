@@ -11,3 +11,7 @@ h1 {
   font-weight: 500;
   color: #f00;
 }
+
+.list_item {
+  font-size: 16px;
+}
