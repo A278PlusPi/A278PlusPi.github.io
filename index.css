@@ -16,12 +16,18 @@ h1 {
   font-size: 16px;
 }
 
+.container_left {
+  width: 250px;
+  background-color: #ddd;
+  flex-shrink: 0;
+}
+
 .red_left_button {
   font-size: 13px;
   background-color: #f00; 
   border-color: #600; 
   border-style: solid; 
-  border-radius: 1px;
+  border-width: 1px;
   margin: 3px 0;
 }
 
@@ -30,7 +36,7 @@ h1 {
   background-color: #00f; 
   border-color: #006; 
   border-style: solid; 
-  border-radius: 1px;
+  border-width: 1px;
   margin: 3px 0;
 }
 
@@ -39,6 +45,6 @@ h1 {
   background-color: #f60; 
   border-color: #620; 
   border-style: solid; 
-  border-radius: 1px;
+  border-width: 1px;
   margin: 3px 0;
 }
