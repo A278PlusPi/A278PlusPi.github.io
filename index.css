@@ -15,3 +15,30 @@ h1 {
 .list_item {
   font-size: 16px;
 }
+
+.red_left_button {
+  font-size: 13px;
+  background-color: #f00; 
+  border-color: #600; 
+  border-style: solid; 
+  border-radius: 1px;
+  margin: 3px 0;
+}
+
+.blue_left_button {
+  font-size: 13px;
+  background-color: #00f; 
+  border-color: #006; 
+  border-style: solid; 
+  border-radius: 1px;
+  margin: 3px 0;
+}
+
+.orange_left_button {
+  font-size: 13px;
+  background-color: #f60; 
+  border-color: #620; 
+  border-style: solid; 
+  border-radius: 1px;
+  margin: 3px 0;
+}
