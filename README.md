@@ -1,2 +1,2 @@
 # A278PlusPi.github.io
-My personal website is under construction. There might be some information that may not be factually right, so please let me know if anything presented on my website is incorrect 
+The reconstruction for my website has started on August 9th, 2023, so the contents of my previous version are outdated
