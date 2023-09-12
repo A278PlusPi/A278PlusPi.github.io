@@ -4,15 +4,15 @@ function App() {
   return (
     <div className="App">
       <div className="button_div">
-        <button>1a</button>
-        <button>1b</button>
-        <button>1c</button>
-        <button>2a</button>
-        <button>2b</button>
-        <button>2c</button>
-        <button>3a</button>
-        <button>3b</button>
-        <button>3c</button>
+        <button className="button_red">1a</button>
+        <button className="button_red">1b</button>
+        <button className="button_red">1c</button>
+        <button className="button_blue">2a</button>
+        <button className="button_blue">2b</button>
+        <button className="button_blue">2c</button>
+        <button className="button_orange">3a</button>
+        <button className="button_orange">3b</button>
+        <button className="button_orange">3c</button>
       </div>
     </div>
   );

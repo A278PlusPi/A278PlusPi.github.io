@@ -1,5 +1,36 @@
 div.button_div > button {
   font-size: 16px;
+  border-style: solid;
+}
+
+.button_red {
+  background-color: hsl(0, 100%, 70%);
+  color: #fff;
+  border-color: hsl(0,100%,50%);
+}
+
+.button_red:hover, .button_red:active {
+  background-color: hsl(0, 100%, 50%);
+}
+
+.button_blue {
+  background-color: hsl(240, 100%, 70%);
+  color: #fff;
+  border-color: hsl(240,100%,50%);
+}
+
+.button_blue:hover, .button_blue:active {
+  background-color: hsl(240, 100%, 50%);
+}
+
+.button_orange {
+  background-color: hsl(24, 100%, 70%);
+  color: #fff;
+  border-color: hsl(24,100%,50%);
+}
+
+.button_orange:hover, .button_orange:active {
+  background-color: hsl(24, 100%, 50%);
 }
 
 /* .App {
