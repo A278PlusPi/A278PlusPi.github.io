@@ -1,5 +1,17 @@
 import './App.css';
 
+import Bio from './components/Bio';
+import Portfolio from './components/Portfolio';
+import Education from './components/Education';
+import Math from './components/Math';
+import Links from './components/Links';
+import Miscellaneous from './components/Miscellaneous';
+import Brand from './components/Brand';
+import Updates from './components/Updates';
+import Contact from './components/Contact';
+
+import {Routes, Route, Outlet, Link} from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
