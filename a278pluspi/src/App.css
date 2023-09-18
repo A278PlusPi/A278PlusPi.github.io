@@ -1,19 +1,24 @@
-div.button_div > button {
+div.button_set {
+  box-sizing: border-box;
+  display: grid;
+  margin: 10px;
+  grid: 160px / 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+div.button_set > button {
   font-size: 24px;
   border-style: solid;
-  display: inline-flexbox;
-  padding-top: 50px;  
-  padding-bottom: 50px;
-  margin: 10px;
-  width: calc(100%/3 - 20px);
-  box-sizing: border-box;
+  height: 160px;
 }
 
 @media (max-width: 800px) {
-  div.button_div > button {
-    width: calc(100% - 20px);
-    display: inline-block;
+  div.button_set {
     box-sizing: border-box;
+    display: grid;
+    margin: 10px;
+    grid: 160px / 1fr;
+    gap: 10px;
   }
 }
 
