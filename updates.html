@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anthony's website updates</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to a CSS Reset or Normalize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+
+<body>
+  <div class = "container_body" style="display:flex">
+    <button class="menu-btn" onclick="toggleNav()">☰</button>
+
+    <div class="container_body" style="display:flex">
+      <div class="container_left" id="sideNav">
+        <a class="remove-decor" href="index.html"><div class="left_button red">Home</div></a>
+        <a class="remove-decor" href="projects.html"><div class="left_button red">Projects</div></a>
+        <a class="remove-decor" href="more.html"><div class="left_button blue">More about me</div></a>
+        <a class="remove-decor" href="math.html"><div class="left_button blue">My math stuff</div></a>
+        <a class="remove-decor" href="branding.html"><div class="left_button orange">About my brand</div></a>
+        <a class="remove-decor" href="misc.html"><div class="left_button orange">Miscellaneous stuff</div></a>
+        <a class="remove-decor" href="updates.html"><div class="left_button gray">Site updates</div></a>
+      </div>
+    <div class = "container_main" style="padding: 0 5px">
+      <p class = "body_text">My website is still evolving into something better. To make things more transparent, I have decided to add a changelog here.</p>
+      <h2>β1.1.1 - Minor changes (10/2/2024)</h2>
+      <ul>
+        <li class = "body_text_s2">Added the "Site updates" page.</li>
+        <li class = "body_text_s2">Navigation bar fixes on mobile</li>
+      </ul>
+      <h2>β1.1 - Responsiveness Improvements (10/2/2024)</h2>
+      <ul>
+        <li class = "body_text_s2">Made improvements to the navigation bar - it is now responsive!</li>
+        <li class = "body_text_s2">Added dynamic age to my "Home" page, it auto-updates now!</li>
+        <li class = "body_text_s2">Updated some information on my page to keep things up to date</li>
+      </ul>
+      I know that there are a lot of information that is missing, so please stay tuned! I am unable to provide a timeline when the site will be completed, but I will try to update it as much as possible.
+      <h2>β1.0 - Initial Launch (1/30/2023)</h2>
+      This initial launch of my site is in "BETA" stage. At that time, I have only included the "Index" page, with navigation items to other pages. These do not work at the moment as these pages are still in planning stages, but will be included in the future.
+    </div>
+
+    <script>
+      console.log('Script loaded'); // Check if the script is loaded
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.menu-btn');
+  const containerLeft = document.querySelector('.container_left');
+
+  console.log('Menu button:', menuBtn); // Check if button is found
+  console.log('Container left:', containerLeft); // Check if container is found
+
+  menuBtn.addEventListener('click', function(event) {
+    console.log('Menu button clicked'); // Check if click event is firing
+    containerLeft.classList.toggle('active');
+    event.stopPropagation(); // Stop event from propagating to the document
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!containerLeft.contains(event.target) && !menuBtn.contains(event.target)) {
+      console.log('Outside clicked'); // Check if outside click is detected
+      containerLeft.classList.remove('active');
+    }
+  });
+});
+    </script>
+
+  </div>
+</body>
+</html>

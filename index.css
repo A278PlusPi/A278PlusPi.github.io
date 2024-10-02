@@ -1,15 +1,25 @@
 * {
-  font-family: Roboto, Helvetica Infant, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Roboto, Helvetica Infant, EM_HelvInfant, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .body_text {    
   font-size: 18px;
 }
 
+.body_text_s2 {    
+  font-size: 16px;
+}
+
 h1 {
-  font-size: 20px;
+  font-size: 24px !important;
   font-weight: 500;
   color: #f00;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #00f;
 }
 
 .list_item {
@@ -23,12 +33,25 @@ h1 {
   transition: transform 0.5s ease;
 }
 
+.container_main {
+  margin-right: 20px;
+}
+
 /* Full screen width on small devices */
 @media (min-width: 769px) {
+  .container_left {
+    height: 100%;
+    position: fixed;
+  }
+
+  .container_main {
+    margin-left: 270px;
+  }
+}
+
   .menu-btn {
       display: none; /* Hide on screens wider than 768px */
   }
-}
 
 @media (max-width: 768px) {
   .container_left {
