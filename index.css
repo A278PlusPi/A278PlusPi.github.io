@@ -1,5 +1,5 @@
-h1, .body_text, .list_item, .red_left_button, .blue_left_button, .orange_left_button, .gray_left_button {
-  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+* {
+  font-family: Roboto, Helvetica Infant, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .body_text {    
@@ -20,44 +20,79 @@ h1 {
   width: 250px;
   background-color: #ddd;
   flex-shrink: 0;
+  transition: transform 0.5s ease;
 }
 
-.red_left_button {
-  font-size: 13px;
+/* Full screen width on small devices */
+@media (min-width: 769px) {
+  .menu-btn {
+      display: none; /* Hide on screens wider than 768px */
+  }
+}
+
+@media (max-width: 768px) {
+  .container_left {
+    transform: translateX(-100%); /* Hide menu */
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  /* Show menu button */
+  .menu-btn {
+    display: block;
+    background-color: #f00; /* Or any preferred color */
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    height: 40px;
+    position: fixed;
+  }
+
+  .container_main {
+    margin-left: 60px;
+  }
+}
+
+/* When the sideNav is active */
+.container_left.active {
+  transform: translateX(0);
+}
+
+.left_button {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 3px;
+  padding-left: 3px;
+  padding: 6px;
+}
+
+.red {
   background-color: #f00; 
   border-color: #600;
-  color: #fff;
-  border-style: solid; 
-  border-width: 1px;
-  margin: 3px 0;
 }
 
-.blue_left_button {
-  font-size: 13px;
+.blue {
   background-color: #00f; 
   border-color: #006;
-  color: #fff;
-  border-style: solid; 
-  border-width: 1px;
-  margin: 3px 0;
 }
 
-.orange_left_button {
-  font-size: 13px;
+.orange {
   background-color: #f60; 
-  border-color: #620; 
-  color: #fff;
-  border-style: solid; 
-  border-width: 1px;
-  margin: 3px 0;
+  border-color: #620;
 }
 
-.gray_left_button {
-  font-size: 13px;
+.gray {
   background-color: #666; 
-  border-color: #222; 
-  color: #fff;
-  border-style: solid; 
-  border-width: 1px;
-  margin: 3px 0;
+  border-color: #222;
+}
+
+.remove-decor {
+  text-decoration: none;
+  
 }
