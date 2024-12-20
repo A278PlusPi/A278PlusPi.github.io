@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Anthony's website!</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to a CSS Reset or Normalize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+
+<body>
+  <div class = "container_body" style="display:flex">
+    <button class="menu-btn" onclick="toggleNav()">☰</button>
+
+    <div class="container_body" style="display:flex">
+      <div class="container_left" id="sideNav">
+        <a class="remove-decor" href="index.html"><div class="left_button red">Home</div></a>
+        <a class="remove-decor" href="projects.html"><div class="left_button red">Projects</div></a>
+        <a class="remove-decor" href="more.html"><div class="left_button blue">More about me</div></a>
+        <a class="remove-decor" href="math.html"><div style="font-weight:700; color:#ff0" class="left_button blue">My math stuff</div></a>
+        <a class="remove-decor" href="branding.html"><div class="left_button orange">About my brand</div></a>
+        <a class="remove-decor" href="misc.html"><div class="left_button orange">Miscellaneous stuff</div></a>
+        <a class="remove-decor" href="updates.html"><div class="left_button gray">Site updates</div></a>
+      </div>
+    <div class = "container_main" style="padding: 0 5px">
+    This page will be implemented next. This information that I will be merging will be based on my math ePortfolio for City Tech OpenLab website. Here are the pages that will be included:
+    <ul>
+      <li>Computer Science</li>
+      <li>Everyday Mathematics</li>
+      <li>Featured Work</li>
+      <li>MAA Weekly Math Wednesdays (Summer 2021)</li>
+    </ul>
+    </div>
+
+    <script>
+      function calculateAge(birthdate) {
+        const now = new Date();
+        const birthDate = new Date(birthdate);
+        const diffTime = Math.abs(now - birthDate);
+        const diffDays = diffTime / (1000 * 60 * 60 * 24);
+        const age = diffDays / 365.2425; // Use 365.2425 to account for leap years
+
+        return age.toFixed(2); // Return age with two decimal places
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const ageElement = document.getElementById('age');
+      const birthdate = '2000-12-09'; // YYYY-MM-DD format
+      ageElement.textContent = calculateAge(birthdate);
+    });
+
+      function toggleNav() {
+        const sideNav = document.getElementById('sideNav');
+        sideNav.classList.toggle('active');
+      }
+
+      // Ensure the DOM is loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.querySelector('.menu-btn');
+        const containerLeft = document.querySelector('.container_left');
+
+        // Toggle the menu on button click
+        menuBtn.addEventListener('click', function(event) {
+          containerLeft.classList.toggle('active');
+          event.stopPropagation(); // Stop event from propagating to the document
+        });
+
+        // Hide the menu when clicking outside
+        document.addEventListener('click', function(event) {
+          if (!containerLeft.contains(event.target) && !menuBtn.contains(event.target)) {
+          containerLeft.classList.remove('active');
+        }
+      });
+  });
+    </script>
+
+    <script>
+      console.log('Script loaded'); // Check if the script is loaded
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.menu-btn');
+  const containerLeft = document.querySelector('.container_left');
+
+  console.log('Menu button:', menuBtn); // Check if button is found
+  console.log('Container left:', containerLeft); // Check if container is found
+
+  menuBtn.addEventListener('click', function(event) {
+    console.log('Menu button clicked'); // Check if click event is firing
+    containerLeft.classList.toggle('active');
+    event.stopPropagation(); // Stop event from propagating to the document
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!containerLeft.contains(event.target) && !menuBtn.contains(event.target)) {
+      console.log('Outside clicked'); // Check if outside click is detected
+      containerLeft.classList.remove('active');
+    }
+  });
+});
+    </script>
+
+  </div>
+</body>
+</html>

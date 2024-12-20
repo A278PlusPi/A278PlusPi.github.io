@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Anthony's website!</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to a CSS Reset or Normalize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+
+<style>
+  table{
+    border:1px solid black;
+  }
+
+  th, td{
+    padding: 5px;
+  }
+
+  th {    
+    border:1px solid #06f;
+    background-color: #cef;
+  }
+
+  td {
+    border:1px solid #09f;
+    background-color: #eff;
+  }
+</style>
+
+<body>
+  <div class = "container_body" style="display:flex">
+    <button class="menu-btn" onclick="toggleNav()">☰</button>
+
+    <div class="container_body" style="display:flex">
+      <div class="container_left" id="sideNav">
+        <a class="remove-decor" href="index.html"><div class="left_button red">Home</div></a>
+        <a class="remove-decor" href="projects.html"><div class="left_button red">Projects</div></a>
+        <a class="remove-decor" href="more.html"><div class="left_button blue">More about me</div></a>
+        <a class="remove-decor" href="math.html"><div class="left_button blue">My math stuff</div></a>
+        <a class="remove-decor" href="branding.html"><div class="left_button orange">About my brand</div></a>
+        <a class="remove-decor" href="misc.html"><div style="font-weight:700; color:#ff0" class="left_button orange">Miscellaneous stuff</div></a>
+        <a class="remove-decor" href="updates.html"><div class="left_button gray">Site updates</div></a>
+      </div>
+    <div class = "container_main" style="padding: 0 5px">
+      <h1>Links</h1>
+      <p class = "body_text">Here are some of my most visited links that I have found useful:</p>
+      <h2>Purely Academic/Career:</h2>
+      <table>
+        <tr>
+          <th>Website</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><a href="http://www.mathispower4u.com/">Mathispower4u</a></td>
+          <td>This was used for learning the material in my Calc 2 and 3 classes. Some of the videos discuss topics theoretically, and then move on to examples.</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.youtube.com/c/TheOrganicChemistryTutor/">The Organic Chemistry Tutor</a></td>
+          <td>Despite its name, this YouTube channel also provides videos for physics and mathematics as well. These videos mainly contain concrete examples for each topic.</td>
+        </tr>
+        <tr>
+          <td><a href="https://trevtutor.com/">TrevTutor</a></td>
+          <td>This covers many topics in algebra and calculus levels as well as discrete mathematics and linear/matrix algebra. This YouTube channel is recommended for those learning discrete mathematics. Kimberly Brehm is also useful too.</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.mathsisfun.com">Math Is Fun</a></td>
+          <td>One of my favorite websites, as it is designed for all ages. It covers material from beginner-level mathematics all the way to some of Calculus 2. It also covers certain material in statistics and probability, matrix algebra, and differential equations. In addition, it has [mathematical] games and other interactive stuff.<br/><br/>The recommend games to try out are the following:
+            <ul>
+              <li style="font-size: 90%;"><a href="https://www.mathsisfun.com/puzzles/index.html">Puzzles</a> - Many of the games aligns with various topics in discrete mathematics</li>
+              <li style="font-size: 90%;"><a href="https://www.mathsisfun.com/data/quincunx.html">Quincunx</a> - This game aligns with the normal distribution concept - oh, the bell curve!!</li>
+              <li style="font-size: 90%;"><a href="https://www.mathsisfun.com/games/towerofhanoi.html">Tower of Hanoi</a> - This game aligns with recursion in general</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ">freeCodeCamp</a></td>
+          <td>This covers various topics in computer science (and computer systems). With some exceptions, each video covers the entire course which makes them several hours long. To optimally learn the material, one should watch a given hours-long video in multiple sittings.
+          </td>
+        </tr>
+        <tr>
+          <td><a href="http://pythontutor.com">Python Tutor</a></td>
+          <td>This website allows you to run your Python code step-by-step. If you want to run C++ code, go <a href="https://pythontutor.com/cpp.html#mode=edit"></a>here</a>. Alternatively, use OnlineGDB for C++.
+          </td>
+        </tr>
+        <tr>
+          <td><a href="https://openstax.org/subjects/math">OpenStax</a></td>
+          <td>This website uses open educational resources to provide free online textbooks for us to use. Check out the math textbooks 😊
+          </td>
+        </tr>
+        <tr>
+          <td><a href="https://leetcode.com">LeetCode</a></td>
+          <td>Since April 2022, I have been using this coding platform to practice my coding skills. Although most recommend using Python, I have decided to use C++ for my practice. I have solved over 750 problems so far.
+          </td>
+        </tr>
+      </table>
+
+      <h2>Academic/Career-Adjacent:</h2>
+      <table>
+        <tr>
+          <th>Website</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><a href="https://globalmathproject.org">Global Math Project</a></td>
+          <td>This website is run by Dr. James Tanton, a mathematician. The fundamental series of topics to start with is Exploding Dots. In addition, he covers a lot of fun topics while still holding educational value. I have known about this website since I attended the MAA Weekly Math Wednesdays.
+          </td>
+        </tr>
+        <tr>
+          <td><a href="https://www.youtube.com/channel/UCHnj59g7jezwTy5GeL8EA_g">MindYourDecisions</a></td>
+          <td>This YouTube channel features challenging math problems for everyone to solve. These math problems encourage us to think critically and outside of the box.
+          </td>
+        </tr>
+        <tr>
+          <td><a href="https://everydaymath.uchicago.edu">Everyday Mathematics</a></td>
+          <td>I loved this curriculum back then, and I still love it now! This curriculum teaches mathematics, but with a twist. It emphasizes on alternative algorithms and games. It also spirals so students can gradually understand the material over time, rather than in one shot. Although it only covers material up until 6th grade, there are certain topics that can be cross-compatible with preliminary college courses.
+          </td>
+        </tr>
+        <tr>
+          <td><a href="https://neetcode.io">NeetCode</a></td>
+          <td>A branch of LeetCode where there are daily videos of coding problems being solved live, and used as a tool to help people prepare for technical interviews. Features include curated lists, structure learning paths, lessons, tutorials, etc.
+          </td>
+        </tr>
+        <tr>
+          <td><a href="https://www.cscareers.dev">cscareers</a></td>
+          <td>cscareers is a software engineering platform that is curated with job searching and a Discord community
+          </td>
+        </tr>
+
+      </table>
+
+      <h2>Purely Recreational:</h2>
+      <table>
+        <tr>
+          <th>Website</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><a href="https://tetr.io">TETR.IO</a></td>
+          <td>The main game I play and practice during my free time. I really like to stack tetrominoes in an orderly fashion. When playing multiplayer (Tetra League), I can immediately see my strengths and other things I should work on.</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.timeanddate.com">Time And Date</a></td>
+          <td>This is not only a tool for getting the current time and date - but it has so many functionalities! I can get different current times, sunrise/sunset times in many different locations, making calendars, reading related news, etc. Time And Date is a large toolbox involving times and dates!</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.online-stopwatch.com">Online Stopwatch</a></td>
+          <td>The classic tool I have used during my childhood. It was just a timer/stopwatch with a few different skins, but that has grown to include way more functionalities than 15 years ago. Imagine that!</td>
+        </tr>
+      </table>
+      <br/>
+      If you are looking for social media links, then please check out the "Home" section. My site lists one of these platforms you can use to connect with me.
+    </div>
+
+    <script>
+      function calculateAge(birthdate) {
+        const now = new Date();
+        const birthDate = new Date(birthdate);
+        const diffTime = Math.abs(now - birthDate);
+        const diffDays = diffTime / (1000 * 60 * 60 * 24);
+        const age = diffDays / 365.2425; // Use 365.2425 to account for leap years
+
+        return age.toFixed(2); // Return age with two decimal places
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const ageElement = document.getElementById('age');
+      const birthdate = '2000-12-09'; // YYYY-MM-DD format
+      ageElement.textContent = calculateAge(birthdate);
+    });
+
+      function toggleNav() {
+        const sideNav = document.getElementById('sideNav');
+        sideNav.classList.toggle('active');
+      }
+
+      // Ensure the DOM is loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.querySelector('.menu-btn');
+        const containerLeft = document.querySelector('.container_left');
+
+        // Toggle the menu on button click
+        menuBtn.addEventListener('click', function(event) {
+          containerLeft.classList.toggle('active');
+          event.stopPropagation(); // Stop event from propagating to the document
+        });
+
+        // Hide the menu when clicking outside
+        document.addEventListener('click', function(event) {
+          if (!containerLeft.contains(event.target) && !menuBtn.contains(event.target)) {
+          containerLeft.classList.remove('active');
+        }
+      });
+  });
+    </script>
+
+    <script>
+      console.log('Script loaded'); // Check if the script is loaded
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.menu-btn');
+  const containerLeft = document.querySelector('.container_left');
+
+  console.log('Menu button:', menuBtn); // Check if button is found
+  console.log('Container left:', containerLeft); // Check if container is found
+
+  menuBtn.addEventListener('click', function(event) {
+    console.log('Menu button clicked'); // Check if click event is firing
+    containerLeft.classList.toggle('active');
+    event.stopPropagation(); // Stop event from propagating to the document
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!containerLeft.contains(event.target) && !menuBtn.contains(event.target)) {
+      console.log('Outside clicked'); // Check if outside click is detected
+      containerLeft.classList.remove('active');
+    }
+  });
+});
+    </script>
+
+  </div>
+</body>
+</html>
