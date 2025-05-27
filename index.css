@@ -38,11 +38,39 @@ h2 {
 }
 
 /* Full screen width on small devices */
+
+@media (min-width: 1620px) {
+  .container_main {    
+    max-width: 1600px;
+    box-sizing: border-box;
+    margin: 0 auto; 
+  }
+
+}
 @media (min-width: 769px) {
+.container_body {
+    display: flex;
+    flex-direction: column;
+  }
+
   .container_head {
-    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;    
+    gap: 10px;
     position: sticky;
     top: 0;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .container_head .left_button {
+    font-size: 19px;
+  }
+
+  .left_button {
+    margin: 0;
   }
 }
 
@@ -75,6 +103,11 @@ h2 {
   .container_main {
     margin-left: -180px;
   }
+
+  .left_button {    
+    margin-bottom: 3px;
+  }
+
 }
 
 /* When the sideNav is active */
@@ -86,7 +119,6 @@ h2 {
 .left_button {
   font-size: 16px;
   color: #fff;
-  margin-bottom: 3px;
   padding-left: 3px;
   padding: 6px;
 }
