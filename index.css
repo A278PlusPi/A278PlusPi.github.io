@@ -26,7 +26,7 @@ h2 {
   font-size: 16px;
 }
 
-.container_left {
+.container_head {
   width: 250px;
   background-color: #ddd;
   flex-shrink: 0;
@@ -34,18 +34,15 @@ h2 {
 }
 
 .container_main {
-  margin-right: 20px;
+  margin: 0 20px;
 }
 
 /* Full screen width on small devices */
 @media (min-width: 769px) {
-  .container_left {
-    height: 100%;
-    position: fixed;
-  }
-
-  .container_main {
-    margin-left: 270px;
+  .container_head {
+    height: 100vh;
+    position: sticky;
+    top: 0;
   }
 }
 
@@ -54,13 +51,11 @@ h2 {
   }
 
 @media (max-width: 768px) {
-  .container_left {
+  .container_head {
     transform: translateX(-100%); /* Hide menu */
-    position: fixed;
-    height: 100%;
+    position: sticky;
+    height: 100vh;
     top: 0;
-    left: 0;
-    z-index: 1000;
   }
 
   /* Show menu button */
@@ -78,13 +73,14 @@ h2 {
   }
 
   .container_main {
-    margin-left: 60px;
+    margin-left: -180px;
   }
 }
 
 /* When the sideNav is active */
-.container_left.active {
+.container_head.active {
   transform: translateX(0);
+  top: 0;
 }
 
 .left_button {
