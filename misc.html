@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>Welcome to Anthony's website!</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="index.css">  
+  <link rel="icon" type="image/x-icon" href="Website icon 2.png">
   <script src="index.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +36,7 @@
     <button class="menu-btn" onclick="toggleNav()">☰</button>
 
     <div class="container_body" style="display:flex">
-      <div class="container_left" id="sideNav">
+      <div class="container_head" id="sideNav">
         <a class="remove-decor" href="index.html"><div class="left_button red">Home</div></a>
         <a class="remove-decor" href="projects.html"><div class="left_button red">Projects</div></a>
         <a class="remove-decor" href="more.html"><div class="left_button blue">More about me</div></a>
@@ -187,7 +188,7 @@
       // Ensure the DOM is loaded
       document.addEventListener('DOMContentLoaded', function() {
         const menuBtn = document.querySelector('.menu-btn');
-        const containerLeft = document.querySelector('.container_left');
+        const containerLeft = document.querySelector('.container_head');
 
         // Toggle the menu on button click
         menuBtn.addEventListener('click', function(event) {
@@ -209,7 +210,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
   const menuBtn = document.querySelector('.menu-btn');
-  const containerLeft = document.querySelector('.container_left');
+  const containerLeft = document.querySelector('.container_head');
 
   console.log('Menu button:', menuBtn); // Check if button is found
   console.log('Container left:', containerLeft); // Check if container is found
